@@ -6,9 +6,9 @@
 }
 
 :root {
-  --darkred: crimson;
+  --darkred: rgb(158, 5, 36);
   --red: #e22b3a;
-  --lightred: #cd1121;
+  --lightred: #e44250;
   --grey: #222222;
   --lightgrey: #2e2e2e;
   --darkgrey: rgb(22, 22, 22);
@@ -67,6 +67,16 @@
   width: 100%;
   height: 1000px;
   background-color: white;
+}
+.base_menu_div {
+  width: 100%;
+  height: 1000px;
+  background-color: var(--grey);
+}
+.base_contact_div {
+  width: 100%;
+  height: 1000px;
+  background-color: var(--lightred);
 }
 
 /* menu page */
