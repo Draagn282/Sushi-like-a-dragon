@@ -68,37 +68,55 @@
                 </p>
               </div>
               <div class="item_cost">
-                <ul>
-                  <li>$: 3,45</li>
-                </ul>
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
-          </div>
-        </div>
+           
         <div class="menu_card_div">
           <div class="card_title">
             <p>single sushi</p>
@@ -106,34 +124,62 @@
           <div class="card_items">
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
             <div class="menu_item">
               <div class="item_picture">
-                <img style="width: 100%" src="./img/Nishiki_fish.png" />
+                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
-                <p>item description baby</p>
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
           </div>
