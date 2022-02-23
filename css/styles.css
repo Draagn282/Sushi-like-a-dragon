@@ -17,7 +17,7 @@ body {
   --darkgrey: rgb(22, 22, 22);
   --white: white;
   --darkwhite: #d8d8d8f2;
-  --lightgreen: rgb(60, 212, 60);
+  --lightgreen: rgb(136, 243, 136);
   --darkgreen: green;
 }
 
@@ -66,20 +66,25 @@ body {
   color: var(--lightgrey);
 }
 
+.nav_space {
+  width: 100%;
+  height: 40px;
+}
+
 /* pages */
 
 /* main page */
 
 .base_main_div {
   width: 100%;
-  height: 1000px;
-  background-image: url(/img/Dragon\ Shushi.png);
+  height: 600px;
+  background-image: url(./img/Nishiki_fish.png);
   background-size: cover;
 }
 
 .main_left_div {
-  width: 50%;
-  height: auto;
+  width: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -89,16 +94,58 @@ body {
   height: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.upper_txt p {
+.upper_txt {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.up_top {
   color: black;
-  font-style: oblique;
+  font-family: "Finger Paint", cursive;
+  font-size: 50px;
+}
+
+.up_down {
+  font-family: "Bebas Neue", cursive;
+  color: red;
+  font-size: 90px;
+}
+
+.main_left_downer_div {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downer_txt {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.downer_p {
+  color: black;
+  font-family: "Finger Paint", cursive;
+  font-size: 18px;
 }
 
 .main_right_div {
-  width: 50%;
-  height: auto;
+  width: 40%;
+  height: 100%;
 }
 
 /* menu page */
@@ -166,7 +213,8 @@ body {
   width: 300px;
   height: 500px;
   margin: 5px;
-  background-color: var(--red);
+  background-color: rgb(56, 56, 56);
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,13 +224,26 @@ body {
 .item_picture {
   width: 95%;
   height: 200px;
-  background-color: aqua;
+}
+
+.item_picture img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .item_description {
   width: 95%;
-  height: 250px;
+  height: 190px;
   background-color: blue;
+}
+
+.item_cost {
+  width: 95%;
+  height: 30px;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* contact page */
