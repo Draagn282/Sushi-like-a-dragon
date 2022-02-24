@@ -186,6 +186,8 @@
         </div>
       </div>
     </div>
+    <div class="nav_space"></div>
+    </div>
     <div class="base_contact_div"></div>
     <div class="foot_main_div">
       <div class="footer_middle_div">
@@ -208,5 +210,6 @@
         </ul>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
