@@ -16,12 +16,19 @@
   <body>
     <!-- <?php phpinfo(); ?> -->
     <div class="nav_main_div">
-      <div class="nav_left_div"></div>
+      <div class="nav_left_div">
+        <img src="../minicrud/img/Nishiki_fish.png">
+        <div class="nav_search">
+          <form class="nav_form">
+            <input class="nav_bar" type="text" placeholder="     Search food.." name="search">
+            <button type="submit"></button>
+          </form>
+          </div>
+        </div>
       <div class="nav_right_div">
-        <a href=""><button>hoofpagina</button></a>
-        <a href=""><button>menu</button></a>
-        <a href=""><button>contact</button></a>
-        <a href=""><button>pagina veranderen</button></a>
+        <a href=""><button class="nav_butn">hoofpagina</button></a>
+        <a href=""><button class="nav_butn">menu</button></a>
+        <a href=""><button class="nav_butn">contact</button></a>
       </div>
     </div>
     <div class="nav_space"></div>
@@ -60,35 +67,10 @@
               <div class="item_picture">
                 <img src="./img/Shusi.jpg" />
               </div>
-              <div class="item_description">
+              <div class="item_title">
                 <p>
-                  ok even wat typen om ervoor te zorgen dat er een beschrijving
-                  staat die ik goed kan stylen zodat ik een mooit site maak ik
-                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                  Sushi met vis
                 </p>
-              </div>
-              <div class="item_cost">
-                <button class="item_add_butn">$: 3,45</button>
-              </div>
-            </div>
-            <div class="menu_item">
-              <div class="item_picture">
-                <img src="./img/Shusi.jpg" />
-              </div>
-              <div class="item_description">
-                <p>
-                  ok even wat typen om ervoor te zorgen dat er een beschrijving
-                  staat die ik goed kan stylen zodat ik een mooit site maak ik
-                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
-                </p>
-              </div>
-              <div class="item_cost">
-                <button class="item_add_butn">$: 3,45</button>
-              </div>
-            </div>
-            <div class="menu_item">
-              <div class="item_picture">
-                <img src="./img/Shusi.jpg" />
               </div>
               <div class="item_description">
                 <p>
@@ -105,6 +87,11 @@
               <div class="item_picture">
                 <img src="./img/Shusi.jpg" />
               </div>
+              <div class="item_title">
+                <p>
+                  Sushi met vis
+                </p>
+              </div>
               <div class="item_description">
                 <p>
                   ok even wat typen om ervoor te zorgen dat er een beschrijving
@@ -116,7 +103,46 @@
                 <button class="item_add_butn">$: 3,45</button>
               </div>
             </div>
-           
+            <div class="menu_item">
+              <div class="item_picture">
+                <img src="./img/Shusi.jpg" />
+              </div>
+              <div class="item_title">
+                <p>
+                  Sushi met vis
+                </p>
+              </div>
+              <div class="item_description">
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
+              </div>
+            </div>
+            <div class="menu_item">
+              <div class="item_picture">
+                <img src="./img/Shusi.jpg" />
+              </div>
+              <div class="item_title">
+                <p>
+                  Sushi met vis
+                </p>
+              </div>
+              <div class="item_description">
+                <p>
+                  ok even wat typen om ervoor te zorgen dat er een beschrijving
+                  staat die ik goed kan stylen zodat ik een mooit site maak ik
+                  ga gewoon door typen todatik ik denk dat ik niet meer hoef
+                </p>
+              </div>
+              <div class="item_cost">
+                <button class="item_add_butn">$: 3,45</button>
+              </div>
+            </div>
         <div class="menu_card_div">
           <div class="card_title">
             <p>single sushi</p>
@@ -186,9 +212,29 @@
         </div>
       </div>
     </div>
-    <div class="nav_space"></div>
     </div>
-    <div class="base_contact_div"></div>
+    <div class="nav_space">
+    </div>
+    <div class="base_contact_div">
+      <div class="contact_title_div">
+        <p>
+          Contact
+        </p>
+      </div>
+      <div class="contact_left">
+        <div class="contact_form">
+          <div class="contact_email"></div>
+          <div class="contact_message"></div>
+          <div class="contact_revieuw"></div>
+        </div>
+      </div>
+      <div class="contact_right">
+        <div class="contact_addnew">
+          <div class="contact_recipe"></div>
+          <div class="contact_ideas"></div>
+        </div>
+      </div>
+    </div>
     <div class="foot_main_div">
       <div class="footer_middle_div">
         <div class="footer_logo_div">
