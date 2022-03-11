@@ -256,17 +256,15 @@
                     Email
                   </p>
                   <div class="email_ownmail">
-                    <label for="email">Enter your email:</label>
+                    <label for="email"></label>
                   <input type="email" id="email" name="email">
-                  <input type="submit">
+                  <input type="submit" value="submit">
                   </div>
-                  
-                
               <div class="email_ourmail">
                 <p>
-                if you want to mail me directly. 
+                if you want to mail me directly.  
               </p>
-              <p><a href="1186391@student.roc-nijmegen.nl">click here</a></p>
+              <p><a href="1186391@student.roc-nijmegen.nl"> click here</a></p>
               </div>
               
             </div>
@@ -274,17 +272,11 @@
               <p class="contact_t">
                 Message?
               </p>
-              <p>
-                want to send us a message?
-              </p>
-              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="stop hier je grootste depressie momenten. Praat er over"></textarea>
+              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="want to send us a message"></textarea>
             </div>
             <div class="contact_revieuw">
               <p class="contact_t">
                 Revieuw
-              </p>
-              <p>
-                revieuw like IGN plz
               </p>
               <textarea id="w3review" name="w3review" rows="6" cols="50" placeholder="look at the fokkin cod revieuws and give us that number"></textarea>
               <div class="revieuw_star">
@@ -305,27 +297,27 @@
         <div class="contact_right">
           <div class="contact_addnew">
             <div class="contact_recipe">
-              <p>
+              <p class="contact_t">
                 want to add new recipie?
               </p>
-              <p>
+              <p class="contact_t">
                 what is in it?
               </p>
               <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea>
-              <p>
+              <p class="contact_t">
                 how much money?
               </p>
               <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea>
              </div> 
              <div class="contact_ideas">
-                <p>
+                <p class="contact_t">
                   any ideas you want to share
                 </p>
                 <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea> 
               </div>
           <div class="contact_comments">
-            <p>
-              comment on aour site
+            <p class="contact_t">
+              comment on our site
             </p>
             <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea> 
           </div>
