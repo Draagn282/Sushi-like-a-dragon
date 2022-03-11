@@ -264,7 +264,7 @@
                 <p>
                 if you want to mail me directly.  
               </p>
-              <p><a href="1186391@student.roc-nijmegen.nl"> click here</a></p>
+              <p><a href="1186391@student.roc-nijmegen.nl">click here</a></p>
               </div>
               
             </div>
