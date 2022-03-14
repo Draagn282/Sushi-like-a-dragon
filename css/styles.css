@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   resize: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -105,8 +106,8 @@ body {
 
 .nav_right_div a :hover {
   color: var(--red);
-  border: solid 1px red;
   transition: 0.1s;
+  cursor: pointer;
 }
 
 .nav_space {
@@ -513,7 +514,7 @@ input[type="radio"] {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -521,12 +522,24 @@ input[type="radio"] {
 .footer_list li {
   background-color: transparent;
   color: white;
+  padding: 5px;
 }
 
 .footer_list li:hover {
   color: var(--red);
   cursor: pointer;
   font-style: bold;
+}
+
+.footer_list li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.footer_list li a:hover {
+  color: #e22b3a;
+  transition: 0.1s;
 }
 
 /* backroom */

@@ -17,18 +17,18 @@
         <img src="../minicrud/img/Nishiki_fish.png">
         <div class="nav_search">
           <form class="nav_form">
-            <input class="nav_bar" type="text" placeholder="     Search food.." name="search">
-            <button type="submit"></button>
+            <input class="nav_bar" type="text" placeholder="     Search food.." name="search"> 
+            
           </form>
           </div>
         </div>
       <div class="nav_right_div">
-        <a href=""><button class="nav_butn">hoofpagina</button></a>
-        <a href=""><button class="nav_butn">menu</button></a>
-        <a href=""><button class="nav_butn">contact</button></a>
+        <a href="#hoofdpagina"><button class="nav_butn">hoofdpagina</button></a>
+        <a href="#menu"><button class="nav_butn">menu</button></a>
+        <a href="#contact"><button class="nav_butn">contact</button></a>
       </div>
     </div>
-    <div class="nav_space"></div>
+    <div class="nav_space" id="hoofdpagina"></div>
     <div class="base_main_div">
       <div class="main_left_div">
         <div class="main_left_upper_div">
@@ -54,7 +54,7 @@
       <div class="menu_top_div">
         <p>Menu</p>
       </div>
-      <div class="menu_div">
+      <div class="menu_div" id="menu">
         <div class="menu_card_div">
           <div class="card_title">
             <p>single sushi</p>
@@ -237,6 +237,102 @@
           </div>
         </div>
       </div>
+      <div class="menu_card_div">
+        <div class="card_title">
+          <p>single sushi</p>
+        </div>
+        <div class="card_items">
+          <div class="menu_item">
+            <div class="item_picture">
+              <img src="./img/Shusi.jpg" />
+            </div>
+            <div class="item_title">
+              <p>
+                Sushi met vis
+              </p>
+            </div>
+            <div class="item_description">
+              <p>
+                ok even wat typen om ervoor te zorgen dat er een beschrijving
+                staat die ik goed kan stylen zodat ik een mooit site maak ik
+                ga gewoon door typen todatik ik denk dat ik niet meer hoef
+              </p>
+            </div>
+            <div class="item_cost">
+              <button class="item_add_butn">$: 3,45</button>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="item_picture">
+              <img src="./img/Shusi.jpg" />
+            </div>
+            <div class="item_title">
+              <p>
+                Sushi met vis
+              </p>
+            </div>
+            <div class="item_description">
+              <p>
+                ok even wat typen om ervoor te zorgen dat er een beschrijving
+                staat die ik goed kan stylen zodat ik een mooit site maak ik
+                ga gewoon door typen todatik ik denk dat ik niet meer hoef
+              </p>
+            </div>
+            <div class="item_cost">
+              <button class="item_add_butn">$: 3,45</button>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="item_picture">
+              <img src="./img/Shusi.jpg" />
+            </div>
+            <div class="item_title">
+              <p>
+                Sushi met vis
+              </p>
+            </div>
+            <div class="item_description">
+              <p>
+                <form action="backroom.php" method="post"> 
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname"><br>
+                  <label for="fname">Last name:</label><br>
+                  <input type="text" id="Lname" name="Lname"><br>
+                  <label for="fname"> Age:</label><br>
+                  <input type="text" id="age" name="age"><br>
+                  <input type="submit" name="sub" value="Submit ur soul">
+                </form>  
+              <!-- ok even wat typen om ervoor te zorgen dat er een beschrijving
+                staat die ik goed kan stylen zodat ik een mooit site maak ik
+                ga gewoon door typen todatik ik denk dat ik niet meer hoef -->
+              </p>
+            </div>
+            <div class="item_cost">
+              <button class="item_add_butn">$: 3,45</button>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="item_picture">
+              <img src="./img/Shusi.jpg" />
+            </div>
+            <div class="item_title">
+              <p>
+                Sushi met vis
+              </p>
+            </div>
+            <div class="item_description">
+              <p>
+                ok even wat typen om ervoor te zorgen dat er een beschrijving
+                staat die ik goed kan stylen zodat ik een mooit site maak ik
+                ga gewoon door typen todatik ik denk dat ik niet meer hoef
+              </p>
+            </div>
+            <div class="item_cost">
+              <button class="item_add_butn">$: 3,45</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
     <div class="nav_space">
@@ -248,7 +344,7 @@
           Contact
         </p>
       </div>
-      <div class="contact_div">
+      <div class="contact_div" id="contact">
         <div class="contact_left">
           <div class="contact_form">
             <div class="contact_email">
@@ -290,6 +386,7 @@
               <label for="html">4</label><br>
               <input type="radio" id="html" name="fav_language" value="HTML">
               <label for="html">5</label><br> 
+              <input type="submit" name="sub" value="Submit ur soul">
               </div>
             </div>
           </div>
@@ -320,6 +417,7 @@
               comment on our site
             </p>
             <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea> 
+            <input type="submit" name="sub" value="Submit ur soul">
           </div>
         </div>
       </div>
@@ -330,25 +428,26 @@
           <img style="height: 100%" src="./img/Nishiki_fish.png" />
         </div>
         <ul class="footer_list">
-          <li>...</li>
-          <hr class="footer_hr" />
-          <li>...</li>
-          <li>...</li>
-          <li>...</li>
+          <li><a href="#hoofdpagina">hoofdpagina</a></li>
+          <hr class="footer_hr"/>
+          <li><a href="#hoofdpagina">beschrijving</a></li>
         </ul>
         <ul class="footer_list">
-          <li>...</li>
+          <li><a href="#menu">menu</a></li>
           <hr class="footer_hr" />
-          <li>...</li>
-          <li>...</li>
-          <li>...</li>
+          <li><a href="#menu">item 1</a></li>
+          <li><a href="#menu">item 2</a></li>
+          <li><a href="#menu">item 3</a></li>
         </ul>
+      <ul class="footer_list">
+        <li><a href="#contact">contact</a></li>
+        <hr class="footer_hr" />
+        <li><a href="#contact">email</a></li>
+        <li><a href="#contact">revieuw</a></li>
+        <li><a href="#contact">nieuw recept</a></li>
+      </ul>
       </div>
     </div>
-    <?php
-      $protagonistname = "Kiryu";
-      echo "battle for the dreams baby!" .  $protagonistname . " is the best protagonist i have played";
-    ?>
     <script src="./js/main.js"></script>
   </body>
 </html>
