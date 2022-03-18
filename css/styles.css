@@ -196,6 +196,7 @@ body {
 
 .base_menu_div {
   width: 100%;
+  min-height: 2350px;
   height: auto;
   background-image: url(../img/Dragon\ menu.png);
   background-size: 100%;
@@ -203,11 +204,12 @@ body {
 
 .menu_top_div {
   width: 100%;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: white;
 }
 .menu_top_div p {
   color: black;
@@ -233,18 +235,19 @@ body {
 }
 .card_title {
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #222222;
+  box-shadow: 0px 5px 10px 3px #131313;
 }
 
 .card_title p {
   color: white;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 800;
 }
 
@@ -263,28 +266,33 @@ body {
   width: 300px;
   height: 430px;
   margin: 10px;
-  background-image: url(../img/dark-stone-surface-2.jpg);
+  background-color: #2e2e2e;
   background-size: cover;
-  border-radius: 6px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  box-shadow: 0px 0px 5px 4px #131313;
 }
 
 .item_picture {
   width: 95%;
   height: 150px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item_picture img {
-  width: 100%;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 15px;
 }
 
 .item_title {
   width: 100%;
-  height: 100px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,18 +329,21 @@ body {
 }
 
 .item_add_butn {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 50px;
   background-color: white;
   border: none;
-  border-radius: 100%;
+  border-radius: 30px;
   transition: 0.1s ease-in;
+  font-family: "Finger Paint", cursive;
+  font-size: 23px;
 }
 
 .item_add_butn:hover {
   cursor: pointer;
   background-color: rgb(41, 226, 57);
   color: white;
+  transition: 0.1s;
 }
 
 /* contact page */
@@ -345,11 +356,12 @@ body {
 
 .contact_title_div {
   width: 100%;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: white;
 }
 
 .contact_title_div p {
@@ -392,7 +404,7 @@ input[type="radio"] {
   width: 80%;
   height: 80%;
   border-radius: 40px;
-  border: red solid 2px;
+  box-shadow: 0px 0px 20px 20px #222222;
   display: flex;
   flex-direction: column;
   background-color: #2e2e2e;
@@ -439,6 +451,28 @@ input[type="radio"] {
   align-items: center;
 }
 
+.star {
+  font-family: "Finger Paint", cursive;
+  font-size: 23px;
+  color: white;
+}
+input[type="submit"] {
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: transparent;
+  border: white solid 1px;
+  border-radius: 2px;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: white;
+  border: #222222;
+  color: black;
+}
+
 .contact_right {
   width: 50%;
   height: 100%;
@@ -452,7 +486,7 @@ input[type="radio"] {
   width: 80%;
   height: 80%;
   border-radius: 40px;
-  border: red solid 2px;
+  box-shadow: 0px 0px 20px 20px #222222;
   display: flex;
   flex-direction: column;
   background-color: #2e2e2e;
@@ -542,9 +576,132 @@ input[type="radio"] {
   transition: 0.1s;
 }
 
-/* backroom */
+/* login */
 .login_div {
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loggin_main {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.loggin_txt p {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.loggin_form {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+}
+
+.loggin_log {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* backroom */
+
+.back_nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1000000;
+  background-color: #222222;
+}
+
+.back_nav_space {
+  height: 60px;
+}
+
+.back_nav a {
+}
+
+.back_nav a button {
+  width: 150px;
+  color: white;
+  font-size: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  transition: 0.2s ease;
+}
+.back_nav a button:hover {
+  box-shadow: inset 300px 0 0 #e22b3a;
+}
+
+.back_add_div {
+  width: 100%;
+  height: 1000px;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.back_add {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+.back_list {
+  width: 100%;
+  height: 1000px;
+}
+
+.add_lable {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.add_form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.add_form input[type="text"] {
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  height: 40px;
+  background-color: #222222;
+  border: solid 3px rgb(65, 64, 64);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.add_textarea {
+  color: white;
+  width: 600px;
+  height: 200px;
+  font-size: 25px;
+  background-color: #222222;
+  resize: none;
+  border: solid 3px rgb(65, 64, 64);
+  border-radius: 10px;
+  padding: 20px;
 }
