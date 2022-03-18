@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 30) {
-      $(".header_main_div").addClass("header_main_div_sticky");
-      $(".header_butn").addClass("header_butn_sticky");
+      $(".nav_main_div").addClass("nav_sticky");
+      $(".nav_right_div a button").addClass("nav_butn_sticky");
     } else {
-      $(".header_main_div").removeClass("header_main_div_sticky");
-      $(".header_butn").removeClass("header_butn_sticky");
+      $(".nav_main_div").removeClass("nav_sticky");
+      $(".nav_right_div a button").removeClass("nav_butn_sticky");
     }
 
     if (this.scrollY < 500) {

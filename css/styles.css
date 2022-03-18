@@ -28,19 +28,27 @@ body {
 
 .nav_main_div {
   width: 100%;
-  height: 70px;
+  height: 65px;
   background-color: white;
   display: flex;
   flex-direction: row;
   position: fixed;
   z-index: 1000000;
-  border-bottom: double red 5px;
+  /* border-bottom: solid red 5px; */
+  transition: 0.2s;
+}
+
+.nav_main_div.nav_sticky {
+  width: 100%;
+  height: 70px;
+  background-color: var(--red);
+  border: none;
+  box-shadow: 0px 6px 18px 5px var(--red);
 }
 
 .nav_left_div {
   width: 50%;
   height: 100%;
-  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -81,9 +89,8 @@ body {
 .nav_right_div {
   width: 50%;
   height: 100%;
-  background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -96,8 +103,26 @@ body {
   font-size: 20px;
   transition: 0.5s;
   font-weight: bolder;
-  border-radius: 14px;
 }
+
+.nav_right_div a button.nav_butn_sticky {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  transition: 0.3s;
+  font-weight: bolder;
+}
+
+.nav_right_div a button.nav_butn_sticky:hover {
+  background-color: white;
+  color: var(--red);
+  font-size: 20px;
+  transition: 0.2s;
+}
+
 .nav_right_div a {
   width: 120px;
   height: 100%;
@@ -160,6 +185,7 @@ body {
 .up_down {
   font-family: "Bebas Neue", cursive;
   color: red;
+  text-shadow: 0px 0px 6px red;
   font-size: 90px;
 }
 
@@ -241,8 +267,8 @@ body {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #222222;
-  box-shadow: 0px 5px 10px 3px #131313;
+  background-color: #333333e1;
+  box-shadow: 0px 5px 10px 3px #252525cb;
 }
 
 .card_title p {
@@ -266,14 +292,14 @@ body {
   width: 300px;
   height: 430px;
   margin: 10px;
-  background-color: #2e2e2e;
+  background-color: #161616de;
   background-size: cover;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  box-shadow: 0px 0px 5px 4px #131313;
+  box-shadow: 0px 0px 15px 4px #202020;
 }
 
 .item_picture {
@@ -316,9 +342,8 @@ body {
 
 .item_description p {
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 .item_cost {
   width: 95%;
   height: 60px;
@@ -404,10 +429,10 @@ input[type="radio"] {
   width: 80%;
   height: 80%;
   border-radius: 40px;
-  box-shadow: 0px 0px 20px 20px #222222;
+  box-shadow: 0px 0px 10px 10px #333333;
   display: flex;
   flex-direction: column;
-  background-color: #2e2e2e;
+  background-color: #161616de;
   align-items: center;
   justify-content: space-around;
 }
@@ -486,10 +511,10 @@ input[type="submit"]:hover {
   width: 80%;
   height: 80%;
   border-radius: 40px;
-  box-shadow: 0px 0px 20px 20px #222222;
+  box-shadow: 0px 0px 10px 10px #333333;
   display: flex;
   flex-direction: column;
-  background-color: #2e2e2e;
+  background-color: #161616de;
   align-items: center;
   justify-content: space-around;
 }
@@ -551,12 +576,15 @@ input[type="submit"]:hover {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+  border-right: #e22b3a solid 1px;
+  padding: 10px;
 }
 
 .footer_list li {
   background-color: transparent;
   color: white;
   padding: 5px;
+  font-family: "Finger Paint", cursive;
 }
 
 .footer_list li:hover {
@@ -569,6 +597,7 @@ input[type="submit"]:hover {
   text-decoration: none;
   color: white;
   transition: 0.2s;
+  font-family: "Finger Paint", cursive;
 }
 
 .footer_list li a:hover {
