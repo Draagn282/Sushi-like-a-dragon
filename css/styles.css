@@ -90,7 +90,7 @@ body {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -146,6 +146,7 @@ body {
 
 .base_main_div {
   width: 100%;
+  min-height: 800px;
   height: 800px;
   background-image: url(../img/Dragon\ Shushi.png);
   background-size: cover;
@@ -489,6 +490,7 @@ input[type="submit"] {
   background-color: transparent;
   border: white solid 1px;
   border-radius: 2px;
+  transition: 0.2s;
 }
 
 input[type="submit"]:hover {
@@ -496,6 +498,7 @@ input[type="submit"]:hover {
   background-color: white;
   border: #222222;
   color: black;
+  transition: 0.1s;
 }
 
 .contact_right {
@@ -564,7 +567,7 @@ input[type="submit"]:hover {
   width: 100%;
   height: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: transparent;
 }
 
@@ -578,6 +581,23 @@ input[type="submit"]:hover {
   align-items: center;
   border-right: #e22b3a solid 1px;
   padding: 10px;
+}
+
+.footer_list_div {
+  width: 65%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer_logo_div {
+  width: 30%;
+  height: auto;
+  display: flex;
+}
+
+.footer_logo_div img {
+  height: 100%;
 }
 
 .footer_list li {
@@ -733,4 +753,52 @@ input[type="submit"]:hover {
   border: solid 3px rgb(65, 64, 64);
   border-radius: 10px;
   padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav_bar[type="text"] {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav_main_div {
+    width: 100%;
+    height: 90px;
+    justify-content: space-evenly;
+  }
+  .nav_left_div {
+    display: none;
+  }
+  .nav_right_div {
+    width: 90%;
+  }
+
+  .nav_right_div a {
+    width: 300px;
+  }
+
+  .nav_right_div a button {
+    font-size: 25px;
+  }
+  .nav_right_div a butto:hover {
+    font-size: 25px;
+  }
+  .nav_right_div a button.nav_butn_sticky {
+    font-size: 25px;
+  }
+
+  .nav_main_div.nav_sticky {
+    width: 100%;
+    height: 90px;
+  }
+  .up_down {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 900px) {
+}
+@media only screen and (max-width: 900px) {
 }

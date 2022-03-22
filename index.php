@@ -357,51 +357,48 @@
         <div class="contact_left">
           <div class="contact_form">
             <div class="contact_email">
-              <form>
+              <form method="post" action="phpmethods/score.php">
                   <p class="contact_t">
                     Email
                   </p>
                   <div class="email_ownmail">
                     <label for="email"></label>
                   <input type="email" id="email" name="email">
-                  <input type="submit" value="submit">
                   </div>
-              <div class="email_ourmail">
-                <p>
-                if you want to mail me directly.  
-              </p>
-              <p><a href="1186391@student.roc-nijmegen.nl">click here</a></p>
-              </div>
-              
-            </div>
-            <div class="contact_message">
-              <p class="contact_t">
-                Message?
-              </p>
-              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="want to send us a message"></textarea>
-            </div>
-            <div class="contact_revieuw">
-              <p class="contact_t">
-                Revieuw
-              </p>
-              <textarea id="w3review" name="w3review" rows="6" cols="50" placeholder="look at the fokkin cod revieuws and give us that number"></textarea>
-              <div class="revieuw_star">
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label class="star" for="html">1</label><br> 
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label class="star" for="html">2</label><br> 
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label class="star" for="html">3</label><br> 
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label class="star" for="html">4</label><br> 
-              <input type="radio" id="html" name="fav_language" value="HTML">
-              <label class="star" for="html">5</label><br> 
-              
-              </div>
-            </div>
-            <input type="submit" name="sub" value="Submit ur soul">
-          </div>
-        </form>
+                  <div class="email_ourmail">
+                    <p>
+                    if you want to mail me directly.  
+                  </p>
+                  <p><a href="1186391@student.roc-nijmegen.nl">click here</a></p>
+                  </div>
+                </div>
+                <div class="contact_message">
+                  <p class="contact_t">
+                    Message?
+                  </p>
+                  <textarea id="w3review" name="bericht" rows="4" cols="50" placeholder="want to send us a message"></textarea>
+                </div>
+                <div class="contact_revieuw">
+                  <p class="contact_t">
+                    Revieuw
+                  </p>
+                  <textarea id="w3review" name="review" rows="6" cols="50" placeholder="look at the fokkin cod revieuws and give us that number"></textarea>
+                  <div class="revieuw_star">
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label class="star" for="html">1</label><br> 
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label class="star" for="html">2</label><br> 
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label class="star" for="html">3</label><br> 
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label class="star" for="html">4</label><br> 
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label class="star" for="html">5</label><br> 
+                        </div>
+                      </div>
+                  <input type="submit" name="sub" value="Submit ur soul">
+                </div>
+            </form>      
         </div>
         <div class="contact_right">
           <div class="contact_addnew">
@@ -410,25 +407,20 @@
                 want to add new recipie?
               </p>
               <p class="contact_t">
-                what is in it?
+                What kind of recipie?
               </p>
-              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea>
+              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="tell us..."></textarea>
               <p class="contact_t">
-                how much money?
+                what ingredients
               </p>
-              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea>
+              <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Give us.."></textarea>
              </div> 
              <div class="contact_ideas">
                 <p class="contact_t">
                   any ideas you want to share
                 </p>
-                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea> 
-              </div>
-          <div class="contact_comments">
-            <p class="contact_t">
-              comment on our site
-            </p>
-            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="dont say stamin x"></textarea> 
+                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="write as much as you like!"></textarea> 
+             </div>
             <input type="submit" name="sub" value="Submit ur soul">
           </div>
         </div>
@@ -437,28 +429,31 @@
     <div class="foot_main_div">
       <div class="footer_middle_div">
         <div class="footer_logo_div">
-          <img style="height: 100%" src="./img/Nishiki_fish.png" />
-          <img style="height: 100%" src="./img/dragon tatoo.png">
+          <img src="./img/Nishiki_fish.png" />
+          <img src="./img/dragon tatoo.png">
         </div>
-        <ul class="footer_list">
-          <li><a href="#hoofdpagina">hoofdpagina</a></li>
-          <hr class="footer_hr"/>
-          <li><a href="#hoofdpagina">beschrijving</a></li>
-        </ul>
-        <ul class="footer_list">
-          <li><a href="#menu">menu</a></li>
-          <hr class="footer_hr" />
-          <li><a href="#menu1">item 1</a></li>
-          <li><a href="#menu2">item 2</a></li>
-          <li><a href="#menu3">item 3</a></li>
-        </ul>
-      <ul class="footer_list">
-        <li><a href="#contact">contact</a></li>
-        <hr class="footer_hr" />
-        <li><a href="#contact">email</a></li>
-        <li><a href="#contact">revieuw</a></li>
-        <li><a href="#contact">nieuw recept</a></li>
-      </ul>
+        <div class="footer_list_div">
+          <ul class="footer_list">
+              <li><a href="#hoofdpagina">hoofdpagina</a></li>
+              <hr class="footer_hr"/>
+              <li><a href="#hoofdpagina">beschrijving</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li><a href="#menu">menu</a></li>
+              <hr class="footer_hr" />
+              <li><a href="#menu1">item 1</a></li>
+              <li><a href="#menu2">item 2</a></li>
+              <li><a href="#menu3">item 3</a></li>
+            </ul>
+            <ul class="footer_list">
+              <li><a href="#contact">contact</a></li>
+              <hr class="footer_hr" />
+              <li><a href="#contact">email</a></li>
+              <li><a href="#contact">revieuw</a></li>
+              <li><a href="#contact">nieuw recept</a></li>
+            </ul>
+        </div>
+        
       </div>
     </div>
     <script src="./js/main.js"></script>
