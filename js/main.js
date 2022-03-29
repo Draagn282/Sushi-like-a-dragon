@@ -15,3 +15,10 @@ $(document).ready(function () {
     }
   });
 });
+
+const button_item = document.querySelector(".item_add_butn");
+
+button_item.addEventListener("click", () => {
+  console.log("ik ben geklikt");
+  $(".menu_item").addClass("menu_one");
+});

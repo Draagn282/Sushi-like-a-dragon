@@ -276,6 +276,7 @@ body {
   color: white;
   font-size: 45px;
   font-weight: 800;
+  font-family: "Finger Paint", cursive;
 }
 
 .card_items {
@@ -301,6 +302,10 @@ body {
   align-items: center;
   justify-content: space-around;
   box-shadow: 0px 0px 15px 4px #202020;
+}
+
+.menu_item.menu_one {
+  background-color: #064410db;
 }
 
 .item_picture {
@@ -370,6 +375,40 @@ body {
   background-color: rgb(41, 226, 57);
   color: white;
   transition: 0.1s;
+}
+
+.item_update_butn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background-color: rgb(23, 241, 23);
+  transition: 0.2s;
+}
+
+.item_delete_butn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background-color: var(--red);
+  transition: 0.2s;
+}
+
+.item_update_butn:hover {
+  background-color: transparent;
+  border: solid 3px rgb(23, 241, 23);
+  color: white;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.item_delete_butn:hover {
+  background-color: transparent;
+  border: solid 3px var(--red);
+  color: white;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 /* contact page */
@@ -742,6 +781,20 @@ input[type="submit"]:hover {
   border-radius: 10px;
   padding: 20px;
 }
+.add_select {
+  color: white;
+  font-size: 25px;
+  width: 300px;
+  height: 40px;
+  background-color: #222222;
+  border: solid 3px rgb(65, 64, 64);
+  border-radius: 10px;
+  height: 60px;
+}
+
+.add_select option {
+  color: white;
+}
 
 .add_textarea {
   color: white;
@@ -754,6 +807,17 @@ input[type="submit"]:hover {
   border-radius: 10px;
   padding: 20px;
 }
+/* update page */
+
+.update_div {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* media  */
 
 @media only screen and (max-width: 900px) {
   .nav_bar[type="text"] {
