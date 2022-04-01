@@ -14,7 +14,9 @@ $sql = "INSERT INTO menu (Naam, Plaatje, Bescrhijving, Prijs, Type ) VALUES (?,?
 $stmt= $pdo->prepare($sql);
 $stmt->execute([$Naam, $Plaatje, $Bescrhijving, $Prijs, $Type]);
 
-echo $Naam, $Plaatje, $Bescrhijving, $Prijs, $Type
+
+header("Location: ../backroom.php");
+exit();
 
 ?>
 

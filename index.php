@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +37,9 @@
       </div>
     </div>
     <div class="nav_space" id="hoofdpagina"></div>
+    <?php
+  include ("./phpmethods/connect.php")
+?>
     <div class="base_main_div">
       <div class="main_left_div">
         <div class="main_left_upper_div">
@@ -67,19 +71,97 @@
           <div class="card_title" id="menu1">
             <p>Appetizers</p>
           </div>
+        </div>
           <div class="card_items">
+            <?php
+            $category = 'Appetizers';
+            $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
+            $stm->bindParam(":typ", $category, PDO::PARAM_STR);  
+            $stm->execute(); 
+            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach($result as $i) { 
+            echo '
+            <div class="menu_item">
+              
+              <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
+              '; echo '
+              <div class="item_title"><p>' . $i['Naam'] . '</p></div>
+              '; echo '
+              <div class="item_description"><p>' . $i['Bescrhijving'] . '</p></div>
+              '; echo '
+              <div class="item_cost">
+                <button class="item_add_butn">$' . $i['Prijs'] . '</button>
+              </div>
+            </div>
+            '; 
+            } 
+            ?>
+          </div>
         <div class="menu_card_div">
           <div class="card_title" id="menu2">
             <p>Main Course</p>
           </div>
             </div>
+          <div class="card_items">
+
+            <?php
+            $category = 'Main Course';
+            $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
+            $stm->bindParam(":typ", $category, PDO::PARAM_STR); 
+            $stm->execute(); 
+            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            
+            foreach($result as $i) { 
+            echo '
+            <div class="menu_item">
+              
+              <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
+              '; echo '
+              <div class="item_title"><p>' . $i['Naam'] . '</p></div>
+              '; echo '
+              <div class="item_description"><p>' . $i['Bescrhijving'] . '</p></div>
+              '; echo '
+              <div class="item_cost">
+              <button class="item_add_butn">$' . $i['Prijs'] . '</button>
+              </div>
+            </div>
+            '; 
+            } 
+  
+            ?>
           </div>
-        </div>
-      </div>
       <div class="menu_card_div">
         <div class="card_title" id="menu3">
           <p>Dessert</p>
         </div>
+        </div>
+        <div class="card_items">
+
+          <?php
+          $category = 'Dessert';
+          $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
+          $stm->bindParam(":typ", $category, PDO::PARAM_STR); 
+          $stm->execute(); 
+          $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+         
+          foreach($result as $i) { 
+          echo '
+          <div class="menu_item">
+            
+            <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
+            '; echo '
+            <div class="item_title"><p>' . $i['Naam'] . '</p></div>
+            '; echo '
+            <div class="item_description"><p>' . $i['Bescrhijving'] . '</p></div>
+            '; echo '
+            <div class="item_cost">
+            <button class="item_add_butn">$' . $i['Prijs'] . '</button>
+            </div>
+          </div>
+          '; 
+          } 
+          ?>
         </div>
       </div>
     <div class="nav_space">

@@ -817,6 +817,11 @@ input[type="submit"]:hover {
   align-items: center;
 }
 
+/* special */
+
+.inviz {
+  display: none;
+}
 /* media  */
 
 @media only screen and (max-width: 900px) {
