@@ -61,6 +61,9 @@
       </div>
       <div class="main_right_div"></div>
     </div>
+    <div class="info_main_div">
+      
+    </div>
     <div class="menu_top_div">
         <p>Menu</p>
       </div>

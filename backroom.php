@@ -9,7 +9,9 @@
   </head>
   <body>
     <div class="back_nav">
-      <a href="./index.php"><button class="back_butn">bac to index</button></a>
+      <a href="./phpmethods/logout.php"
+        ><button class="back_butn">bac to index</button></a
+      >
       <a href="./update.php"><button class="back_butn">to update</button></a>
     </div>
     <div class="back_nav_space"></div>
@@ -95,7 +97,7 @@
               </button>
             </form>
             <button class="item_add_butn">$' . $i['Prijs'] . '</button>
-            <a href="update.php?id=<?php echo $i['ID'] ?>">
+            <a href="update.php?id=' . $i['ID'] . '">
               <button class="item_update_butn">Update</button>
             </a>
           </div>

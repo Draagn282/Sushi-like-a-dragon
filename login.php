@@ -19,7 +19,7 @@
             <input type="text" id="name" name="fname"><br>
             <label for="pass">Wachtwoord:</label><br>
             <input type="password" id="pass" name="Lname"><br>
-            <input type="submit" name="sub" value="enter">
+            <input type="submit" name="login" value="Login">
           </form>  
       </div>
     </div>

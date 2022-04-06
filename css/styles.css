@@ -219,6 +219,14 @@ body {
   height: 100%;
 }
 
+/* info page */
+
+.info_main_div {
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/Dragon\ contact.png);
+}
+
 /* menu page */
 
 .base_menu_div {

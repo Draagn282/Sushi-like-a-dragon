@@ -1,22 +1,24 @@
 <?php
 
-include('../phpmethods/connect.php');
+    include('../phpmethods/connect.php');
 
-$Naam = $_POST['name'];
-$Plaatje = $_POST['image'];
-$Bescrhijving = $_POST['txt'];
-$Prijs = $_POST['price'];
-$Type = $_POST['type']; 
+    if (isset ($_POST[]))
 
-
-
-$sql = "INSERT INTO menu (Naam, Plaatje, Bescrhijving, Prijs, Type ) VALUES (?,?,?,?,?)";
-$stmt= $pdo->prepare($sql);
-$stmt->execute([$Naam, $Plaatje, $Bescrhijving, $Prijs, $Type]);
+    $Naam = $_POST['name'];
+    $Plaatje = $_POST['image'];
+    $Bescrhijving = $_POST['txt'];
+    $Prijs = $_POST['price'];
+    $Type = $_POST['type']; 
 
 
-header("Location: ../backroom.php");
-exit();
+
+    $sql = "INSERT INTO menu (Naam, Plaatje, Bescrhijving, Prijs, Type ) VALUES (?,?,?,?,?)";
+    $stmt= $pdo->prepare($sql);
+    $stmt->execute([$Naam, $Plaatje, $Bescrhijving, $Prijs, $Type]);
+
+
+    header("Location: ../backroom.php");
+    exit();
 
 ?>
 

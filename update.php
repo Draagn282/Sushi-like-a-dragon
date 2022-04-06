@@ -10,9 +10,7 @@
   <body>
     <div class="back_nav">
       <a href="./index.php"><button class="back_butn">bac to index</button></a>
-      <a href="./backroom.php"
-        ><button class="back_butn">to backroom</button></a
-      >
+      <a href="./backroom.php"><button class="back_butn">to backroom</button></a>
     </div>
     <div class="back_nav_space"></div>
     <div class="update_div">
@@ -23,6 +21,7 @@
           type="text"
           id="name"
           name="name"
+          value=""
           placeholder="Enter name"
         />
         <label class="add_lable" for="image">Image</label>
