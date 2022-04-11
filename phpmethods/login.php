@@ -9,7 +9,7 @@
         exit();
 
     } else{
-    header('location: ../index.php')
+    header('location: ../index.php');
     exit();
 }
 

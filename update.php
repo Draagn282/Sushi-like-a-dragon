@@ -1,3 +1,26 @@
+<!-- 
+  include session
+
+  met $_GET de id ophalen uit de URL
+
+  Met gebruik van de ID hierboven voer je een query om de data op te halen uit de DB met die specifieke ID
+
+  oftuwel: SELECT * FROM blabablablalba WHERE id = :id
+
+  Gebruik deze data in je formulier, een voorbeeld hiervan is:
+
+    <input type="text" value="< ?php echo $result['prijs']; ? />"
+
+      daarna gewoon je formulier versturen en updaten met phpmethods/updateProducts.php
+ -->
+
+<?php
+
+
+  include ("./phpmethods/update_item.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,18 +33,21 @@
   <body>
     <div class="back_nav">
       <a href="./index.php"><button class="back_butn">bac to index</button></a>
-      <a href="./backroom.php"><button class="back_butn">to backroom</button></a>
+      <a href="./backroom.php"
+        ><button class="back_butn">to backroom</button></a
+      >
     </div>
     <div class="back_nav_space"></div>
     <div class="update_div">
-      <form class="add_form" method="post" action="phpmethods/insert_item.php">
+      <?php var_dump($i); ?>
+      <form class="add_form" method="post" action="phpmethods/update_data.php">
         <label class="add_lable" for="name">Name</label>
         <input
           class="add_input"
           type="text"
           id="name"
           name="name"
-          value=""
+          value="<?php echo $i['Naam'];?> "
           placeholder="Enter name"
         />
         <label class="add_lable" for="image">Image</label>
@@ -31,7 +57,7 @@
           id="image"
           name="image"
           placeholder="insert image"
-          value="./img/gerechten/"
+          value="<?php echo $i['Plaatje'];?>"
         />
         <label class="add_lable" for="txt">Description</label>
         <textarea
@@ -39,7 +65,9 @@
           id="txt"
           name="txt"
           placeholder="Enter description"
-        ></textarea>
+        >
+<?php echo $i['Bescrhijving'];?></textarea
+        >
         <label class="add_lable" for="price">Price</label>
         <input
           class="add_input"
@@ -47,14 +75,19 @@
           id="price"
           name="price"
           placeholder="Enter price"
+          value="<?php echo $i['Prijs'];?>"
         />
+        <input type="text" value="<?php echo $i['ID'];?>" readonly name="id" />
         <label class="add_lable" for="type">Type</label>
         <select class="add_select" id="type" name="type">
+          <option value="<?php echo $i['Type'];?>">
+            <?php echo $i['Type'];?>
+          </option>
           <option value="Appetizers">Appetizers</option>
           <option value="Main Course">Main Course</option>
           <option value="Dessert">Dessert</option>
         </select>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" name="update" />
       </form>
     </div>
   </body>

@@ -17,7 +17,6 @@
     <title>ryu ga gotoku SUSHI</title>
   </head>
   <body>
-    <!-- <?php phpinfo(); ?> -->
     <div class="nav_main_div">
       <div class="nav_left_div">
         <img src="../minicrud/img/dragon tatoo.png">

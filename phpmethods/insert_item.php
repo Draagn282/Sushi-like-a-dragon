@@ -2,7 +2,7 @@
 
     include('../phpmethods/connect.php');
 
-    if (isset ($_POST[]))
+    if (isset($_POST['insert']))
 
     $Naam = $_POST['name'];
     $Plaatje = $_POST['image'];

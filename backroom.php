@@ -1,3 +1,9 @@
+<?php
+
+  include ("./phpmethods/session.php");
+  include ("./phpmethods/connect.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,17 +15,10 @@
   </head>
   <body>
     <div class="back_nav">
-      <a href="./phpmethods/logout.php"
-        ><button class="back_butn">bac to index</button></a
-      >
-      <a href="./update.php"><button class="back_butn">to update</button></a>
-    </div>
+      <a href="./phpmethods/logout.php"><button class="back_butn">bac to index</button></a>
+      </div>
     <div class="back_nav_space"></div>
-    <?php
 
-  include ("./phpmethods/connect.php")
-
-?>
     <div class="back_add_div">
       <form class="add_form" method="post" action="phpmethods/insert_item.php">
         <label class="add_lable" for="name">Name</label>
@@ -60,7 +59,7 @@
           <option value="Main Course">Main Course</option>
           <option value="Dessert">Dessert</option>
         </select>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" name="insert"/>
       </form>
     </div>
     <div class="back_list">
@@ -115,7 +114,7 @@
         $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
         $result = $stm->fetchAll(PDO::FETCH_ASSOC); var_dump($result);
         foreach($result as $i) { echo '
-        <div class="menu_item">
+          <div class="menu_item">
           <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
           '; echo '
           <div class="item_title"><p>' . $i['Naam'] . '</p></div>
@@ -135,7 +134,9 @@
               </button>
             </form>
             <button class="item_add_butn">$' . $i['Prijs'] . '</button>
-            <button class="item_update_butn">Update</button>
+            <a href="update.php?id=' . $i['ID'] . '">
+              <button class="item_update_butn">Update</button>
+            </a>
           </div>
         </div>
         '; } ?>
@@ -150,7 +151,7 @@
         $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
         $result = $stm->fetchAll(PDO::FETCH_ASSOC); var_dump($result);
         foreach($result as $i) { echo '
-        <div class="menu_item">
+          <div class="menu_item">
           <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
           '; echo '
           <div class="item_title"><p>' . $i['Naam'] . '</p></div>
@@ -170,7 +171,9 @@
               </button>
             </form>
             <button class="item_add_butn">$' . $i['Prijs'] . '</button>
-            <button class="item_update_butn">Update</button>
+            <a href="update.php?id=' . $i['ID'] . '">
+              <button class="item_update_butn">Update</button>
+            </a>
           </div>
         </div>
         '; } ?>
