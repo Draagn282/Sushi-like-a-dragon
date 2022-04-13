@@ -73,8 +73,9 @@
         <?php
       $category = 'Appetizers';
       $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
-        $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC); var_dump($result);
+        $stm->bindParam(":typ", $category, PDO::PARAM_STR); 
+        $stm->execute();
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i) { echo '
         <div class="menu_item">
           <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
@@ -112,7 +113,7 @@
           $category = 'Main Course';
           $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
         $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC); var_dump($result);
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i) { echo '
           <div class="menu_item">
           <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>
@@ -149,7 +150,7 @@
           $category = 'Dessert';
           $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
         $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
-        $result = $stm->fetchAll(PDO::FETCH_ASSOC); var_dump($result);
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i) { echo '
           <div class="menu_item">
           <div class="item_picture"><img src="' . $i['Plaatje'] . '" /></div>

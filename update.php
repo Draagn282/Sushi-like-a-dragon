@@ -1,21 +1,4 @@
-<!-- 
-  include session
-
-  met $_GET de id ophalen uit de URL
-
-  Met gebruik van de ID hierboven voer je een query om de data op te halen uit de DB met die specifieke ID
-
-  oftuwel: SELECT * FROM blabablablalba WHERE id = :id
-
-  Gebruik deze data in je formulier, een voorbeeld hiervan is:
-
-    <input type="text" value="< ?php echo $result['prijs']; ? />"
-
-      daarna gewoon je formulier versturen en updaten met phpmethods/updateProducts.php
- -->
-
 <?php
-
 
   include ("./phpmethods/update_item.php");
 
@@ -39,7 +22,6 @@
     </div>
     <div class="back_nav_space"></div>
     <div class="update_div">
-      <?php var_dump($i); ?>
       <form class="add_form" method="post" action="phpmethods/update_data.php">
         <label class="add_lable" for="name">Name</label>
         <input
@@ -77,7 +59,13 @@
           placeholder="Enter price"
           value="<?php echo $i['Prijs'];?>"
         />
-        <input type="text" value="<?php echo $i['ID'];?>" readonly name="id" />
+        <input
+          type="text"
+          hidden
+          value="<?php echo $i['ID'];?>"
+          readonly
+          name="id"
+        />
         <label class="add_lable" for="type">Type</label>
         <select class="add_select" id="type" name="type">
           <option value="<?php echo $i['Type'];?>">

@@ -449,6 +449,8 @@ body {
   height: 900px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 input[type="radio"] {
@@ -457,7 +459,89 @@ input[type="radio"] {
   font-weight: 900;
   font-family: "Finger Paint", cursive;
 }
+input[type="range"] {
+  width: 300px;
+  background-color: transparent;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: var(--red);
+  border: 2.8px solid rgba(1, 1, 1, 0);
+  border-radius: 13.1px;
+  width: 100%;
+  height: 15px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  margin-top: -3.5px;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border: 1.9px solid rgba(255, 0, 0, 0);
+  border-radius: 33px;
+  cursor: pointer;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--lightred);
+}
+input[type="range"]::-moz-range-track {
+  background: var(--red);
+  border: 2.8px solid rgba(1, 1, 1, 0);
+  border-radius: 13.1px;
+  width: 100%;
+  height: 21.3px;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1.9px solid rgba(255, 0, 0, 0);
+  border-radius: 33px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 0.35px 0;
+  color: transparent;
+  width: 100%;
+  height: 21.3px;
+  cursor: pointer;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ff0030;
+  border: 2.8px solid rgba(1, 1, 1, 0);
+  border-radius: 26.2px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ff0030;
+  border: 2.8px solid rgba(1, 1, 1, 0);
+  border-radius: 26.2px;
+}
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 1.9px solid rgba(255, 0, 0, 0);
+  border-radius: 33px;
+  cursor: pointer;
+  margin-top: 0px;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ff0030;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ff0030;
+}
 
+input[type="email"] {
+  width: 200px;
+  height: 30px;
+  padding: 2px;
+}
 .contact_t {
   color: white;
   font-size: 20px;
@@ -474,7 +558,7 @@ input[type="radio"] {
 }
 
 .contact_form {
-  width: 80%;
+  width: 55%;
   height: 80%;
   border-radius: 40px;
   box-shadow: 0px 0px 10px 10px #333333;
