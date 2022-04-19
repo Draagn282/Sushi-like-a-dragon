@@ -51,9 +51,9 @@
           <div class="downer_txt">
             <p class="downer_p">
               Hier maken wij sushi. Duh ik bedoel waarom ga je dan naar deze
-              site. om te kijken hoe mooi hij is... HAHAH ik ben geen art
-              designer. Ik zie wel wat mooit is maar om dat zelf te maken ik wel
-              veel gevraagt
+              website. om te kijken hoe mooi hij is... HAHAH ik ben geen art
+              designer. Ik zie wel wat mooi is maar om dat zelf te maken ik wel
+              veel gevraagt. Smakelijk eten, groetjes
             </p>
           </div>
         </div>
