@@ -14,5 +14,3 @@ try {
 }
     
 ?>
-<!-- 
-<h1> Omaewa mou shinderiu </h1> -->
