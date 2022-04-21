@@ -920,6 +920,10 @@ input[type="submit"]:hover {
   .nav_bar[type="text"] {
     width: 300px;
   }
+
+  textarea {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -956,8 +960,23 @@ input[type="submit"]:hover {
   .up_down {
     font-size: 60px;
   }
+  .footer_list {
+    width: 100%;
+  }
+  .footer_list li {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .footer_list {
+    width: 100px;
+  }
+  .footer_list li {
+    font-size: 14px;
+  }
+  .nav_main_div {
+    height: 80px;
+  }
 }
 @media only screen and (max-width: 900px) {
 }

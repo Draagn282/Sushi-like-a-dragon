@@ -21,9 +21,8 @@
       <div class="nav_left_div">
         <img src="../minicrud/img/dragon tatoo.png">
         <div class="nav_search">
-          <form class="nav_form">
+          <form class="nav_form" method="post" action="#">
             <input class="nav_bar" type="text" placeholder="     Search food.." name="search"> 
-            
           </form>
           </div>
         </div>
@@ -77,11 +76,21 @@
           <div class="card_items">
             <?php
             $category = 'Appetizers';
-            $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
-            $stm->bindParam(":typ", $category, PDO::PARAM_STR);  
-            $stm->execute(); 
-            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
             
+            if (!empty($_POST)){
+              $search = '%'.$_POST['search'].'%';
+              $sql = "SELECT * FROM menu WHERE Naam LIKE :search AND Type = :typ";
+              $stm = $pdo->prepare($sql);
+              $stm->bindParam(":search", $search);  
+              $stm->bindParam(":typ", $category);  
+             
+            } else {
+              $sql = "SELECT * FROM menu WHERE Type = :typ";
+              $stm = $pdo->prepare($sql);
+              $stm->bindParam(":typ", $category);  
+          }
+          $stm->execute(); 
+          $result = $stm->fetchAll(PDO::FETCH_ASSOC);
             foreach($result as $i) { 
             echo '
             <div class="menu_item">
@@ -109,10 +118,20 @@
 
             <?php
             $category = 'Main Course';
-            $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
-            $stm->bindParam(":typ", $category, PDO::PARAM_STR); 
-            $stm->execute(); 
-            $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+            if (!empty($_POST)){
+              $search = '%'.$_POST['search'].'%';
+              $sql = "SELECT * FROM menu WHERE Naam LIKE :search AND Type = :typ";
+              $stm = $pdo->prepare($sql);
+              $stm->bindParam(":search", $search);  
+              $stm->bindParam(":typ", $category);  
+             
+            } else {
+              $sql = "SELECT * FROM menu WHERE Type = :typ";
+              $stm = $pdo->prepare($sql);
+              $stm->bindParam(":typ", $category);  
+          }
+          $stm->execute(); 
+          $result = $stm->fetchAll(PDO::FETCH_ASSOC);
             
             foreach($result as $i) { 
             echo '
@@ -142,10 +161,20 @@
 
           <?php
           $category = 'Dessert';
-          $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
-          $stm->bindParam(":typ", $category, PDO::PARAM_STR); 
-          $stm->execute(); 
-          $result = $stm->fetchAll(PDO::FETCH_ASSOC);
+          if (!empty($_POST)){
+            $search = '%'.$_POST['search'].'%';
+            $sql = "SELECT * FROM menu WHERE Naam LIKE :search AND Type = :typ";
+            $stm = $pdo->prepare($sql);
+            $stm->bindParam(":search", $search);  
+            $stm->bindParam(":typ", $category);  
+           
+          } else {
+            $sql = "SELECT * FROM menu WHERE Type = :typ";
+            $stm = $pdo->prepare($sql);
+            $stm->bindParam(":typ", $category);  
+        }
+        $stm->execute(); 
+        $result = $stm->fetchAll(PDO::FETCH_ASSOC);
          
           foreach($result as $i) { 
           echo '
@@ -187,8 +216,7 @@
                   <div class="email_ownmail">
                     <label for="email"></label>
                   <input type="email" id="email" name="email" placeholder="insert youre email here!">
-                  </div>
-                  
+                </div>
                 </div>
                 <div class="contact_message">
                   <p class="contact_t">
@@ -210,7 +238,8 @@
                       </div>
                   <input type="submit" name="rate" value="Submit ur soul">
                 </div>
-            </form>          </div>
+            </form>          
+        </div>
     <div class="foot_main_div">
       <div class="footer_middle_div">
         <div class="footer_logo_div">
