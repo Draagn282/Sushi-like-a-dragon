@@ -30,7 +30,6 @@
         <a href="#hoofdpagina"><button class="nav_butn">hoofdpagina</button></a>
         <a href="#menu"><button class="nav_butn">menu</button></a>
         <a href="#contact"><button class="nav_butn">contact</button></a>
-        <!-- <a href="./backroom.php"><button class="nav_butn">back</button></a> -->
         <a href="./login.php"><button class="nav_butn">log</button></a>
       </div>
     </div>
