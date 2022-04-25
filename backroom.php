@@ -147,8 +147,8 @@
       </div>
       <div class="card_items">
         <?php
-          $category = 'Dessert';
-          $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
+        $category = 'Dessert';
+        $stm = $pdo->prepare("SELECT * FROM menu WHERE Type = :typ");
         $stm->bindParam(":typ", $category, PDO::PARAM_STR); $stm->execute();
         $result = $stm->fetchAll(PDO::FETCH_ASSOC);
         foreach($result as $i) { echo '

@@ -75,7 +75,7 @@
           <option value="Main Course">Main Course</option>
           <option value="Dessert">Dessert</option>
         </select>
-        <input type="submit" value="Submit" name="update" />
+        <input type="submit" value="Submit" name="update"/>
       </form>
     </div>
   </body>
